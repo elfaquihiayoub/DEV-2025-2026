@@ -6,27 +6,71 @@
     <title>structurer la page HTML</title>
 </head>
 <body>
-    <h1>hello world</h1>
-    <p><strong><em>this is an HTML paragraph</em></strong></p>
-    <img src="assets/download.png" alt="Une image d’exemple">
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS</li>
-    </ul>
-    <table border="1">
-        <tr>
-          <th>Nom</th>
-          <th>Âge</th>
-        </tr>
-        <tr>
-          <td>ayoub</td>
-          <td>19</td>
-        </tr>
-        <tr>
-          <td>johaina</td>
-          <td>18</td>
-        </tr>
-      </table>
+    <header>
+      <!-- titie -->
+      <h1>My project</h1>
+      <!-- nav links -->
+      <nav>
+        <a href="">Accueil</a>
+        <a href="">Articles</a>
+        <a href="">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h2>hello</h2>
+        <p><strong><em>this is an HTML paragraph</em></strong></p>
+        <img src="assets/download.png" alt="Une image d’exemple">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+     </article>
+     <section>
+      <!-- table  -->
+      <table border="1">
+          <tr>
+            <th>Nom</th>
+            <th>Âge</th>
+          </tr>
+          <tr>
+            <td>ayoub</td>
+            <td>19</td>
+          </tr>                                   
+          <tr>
+            <td>johaina</td>
+            <td>18</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <!-- form -->
+        <form action="file.php" method="post">
+          <fieldset>
+            <legend>CONTACT US  </legend>
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" placeholder="your name" required  aria-label="Full name">
+            <label for="email">E-mail :</label>
+            <input type="email" name="email" id="email" placeholder="exemple@mail.com" required>
+            <p>Gender</p>
+            <label for="Man">Man
+              <input type="radio" value="Man" name="Gender" id="Man" required>
+            </label>
+            <label for="Woman">Woman
+              <input type="radio" value="Woman" name="Gender" id="Woman" required>
+            </label>
+            <br>
+            <label for="message"> Message : </label>
+            <textarea name="message" id="message" cols="30" rows="2"></textarea>
+            
+            <br>
+            <button type="submit">Send</button>
+          </fieldset>
+        </form>
+      </div>  
+    </footer>  
 </body>
 </html>
