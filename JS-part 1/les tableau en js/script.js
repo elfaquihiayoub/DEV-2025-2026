@@ -44,6 +44,48 @@ users.forEach(function(users)
 })
 
 
+/////////////------------------exercise-----------------------////////
+let books=[
+    {titre:"the beginning after the end",auteur:"turtleme",prix:500},
+    {titre:"solo leveling",auteur:"takabu kotu" ,prix:99},
+    {titre:"shadow slave", auteur:"yan chowabi" ,prix:300},
+    {titre:"lord of mysteries", auteur:"kobu" ,prix:150},
+   
+];
+let AfficherListComplete=function(){
+    console.log(books)
+}
+let AfficherLesTitre=function(){
+   for (let i=0; i< books.length; i++) {
+    console.log(books[i].titre)
+    
+   }
+}
+let TotalDesPrix=function(){
+    let total=0
+    for (let i=0; i< books.length; i++) {
+        
+         total=total+books[i].prix
+       }
+       console.log(total)
+}
+
+let plusDeCent=function(){
+    for (let i=0; i< books.length; i++) {
+        
+        if(books[i].prix>100){
+            console.log(books[i].titre)
+
+
+        }
+       }
+}
+
+
+AfficherListComplete();
+AfficherLesTitre();
+TotalDesPrix();
+plusDeCent();
 
 
 
