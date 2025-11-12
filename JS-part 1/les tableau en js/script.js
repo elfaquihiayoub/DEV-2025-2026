@@ -1,5 +1,6 @@
 //object table
 let users=[
+
     {name:"ayoub",age:"19"},
     {name:"youssef",age:"22"},
     {name:"amaghoch",age:"18"},
@@ -7,6 +8,7 @@ let users=[
     {name:"jihane",age:"17"},
     {name:"israe",age:"13"},
 ];
+
 // creat an array
 let names=["ayoub","ayoub2","zakariya","monir","brahim","yassir"];
 console.log("the names are:",names);
@@ -24,7 +26,7 @@ console.log(names);
 names.unshift("hanae");
 console.log(names);
 //splice (start,deleted itms,  item1,2,...)
-names.splice(0,1,"hafsa","johaina")
+names.splice(1,0,"hafsa","johaina")
 console.log(names)
 //slice 
 let class1=names.slice(0,3);
@@ -38,9 +40,9 @@ for(let name of names){
     console.log(name)
 }
 // to write each single slot in the object
-users.forEach(function(users)
+users.forEach(function(user)
 {
-    console.log(users.name+"is"+users.age+"year oldd")
+    console.log(user.name+"is"+user.age+"year oldd")
 })
 
 
@@ -82,10 +84,20 @@ let plusDeCent=function(){
 }
 
 
+
 AfficherListComplete();
 AfficherLesTitre();
 TotalDesPrix();
 plusDeCent();
+
+
+
+
+let image=document.querySelector("img")
+    image.addEventListener("click",function(){
+
+        
+    })
 
 
 
