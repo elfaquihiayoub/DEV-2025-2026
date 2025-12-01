@@ -92,14 +92,14 @@ main{
     border-radius: 50%;
 }
 .decorationX{
-    top: 25vh;
-    right: 10vw;
+    top: 30vh;
+    right: 11vw;
 
 }
 
 @media only screen and (max-width: 600px){
     body{
-        background-color: aqua;
+        
         grid-template-rows: 1fr 7fr ;
         height: 100vh;
         
@@ -107,15 +107,18 @@ main{
   
 
     #menu{
+        padding-top: 5vh;
         flex-direction: column;
         justify-content: space-around;
         text-align: center;
         width: 30%;
-        margin-top: 30vh;
+        margin-top: 32vh;
+        margin-right: 1vw;
         display: none;
         height: 40vh;
         z-index: 1;
         border-radius: 10px;
+        box-shadow: 4px 4px 10px white, -4px -4px 10px white;
 
 
         background-color: rgba(230, 255, 255, 0.39);    
