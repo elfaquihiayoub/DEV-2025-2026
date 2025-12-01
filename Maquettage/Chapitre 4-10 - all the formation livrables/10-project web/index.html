@@ -12,7 +12,9 @@
             <ul>
                 <li id="logo">logo</li>
             </ul>
+            <div class="menu-icon" onclick="toggleMenu()" >☰</div>
             <ul id="menu">
+               
                 <li><a href="">home</a></li>
                 <li><a href="">technologies</a></li>
                 <li><a href="">about</a></li>
@@ -41,5 +43,27 @@
 
 
     
+    <script>
+        function toggleMenu() {
+          
+            if (window.innerWidth > 600) {
+                return;
+            }
+        
+            const menu = document.getElementById("menu");
+            const icon = document.querySelector(".menu-icon");
+        
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+                icon.textContent = "☰";
+                icon.classList.remove("decorationX")
+            } else {
+                menu.style.display = "block";
+                icon.classList.add("decorationX")
+                icon.textContent = "✖"; // close icon
+            }
+        }
+        </script>
+        
 </body>
 </html>
