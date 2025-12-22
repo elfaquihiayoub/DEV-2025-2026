@@ -1,5 +1,5 @@
-CREATE database blogDB
-use blogDB:;
+CREATE DATABASE BlogDB;
+USE BlogDB;
 
 CREATE TABLE Utilisateur (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -24,6 +24,5 @@ CREATE TABLE Commentaire (
   date_commentaire DATE,
   id_article INT,
   FOREIGN KEY (id_article) REFERENCES Article(id)
-  
 );
 
