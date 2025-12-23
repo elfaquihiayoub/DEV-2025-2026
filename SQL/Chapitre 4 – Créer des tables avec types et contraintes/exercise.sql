@@ -1,5 +1,5 @@
 CREATE database blogDB
-use blogDB:;
+use blogDB;
 
 CREATE TABLE Utilisateur (
   id INT AUTO_INCREMENT PRIMARY KEY,
