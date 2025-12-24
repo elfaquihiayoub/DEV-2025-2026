@@ -27,4 +27,4 @@ CREATE TABLE Commentaire (
 );
 
 ALTER TABLE Utilisateur ADD INDEX (email);
-ALTER TABLE Utilisateur COMMENT = 'Table des utilisateurs du blog';
+ALTER TABLE Utilisateur COMMENT = 'Table des utilisateurs du blog'; 
