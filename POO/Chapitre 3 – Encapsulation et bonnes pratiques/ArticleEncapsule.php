@@ -10,17 +10,17 @@ class Articles {
             echo " title invalid";
         }
     }
-    public function getTitle($title){
+    public function getTitle(){
       return $this->title;
     }
     public function setContenu ($contenu){
         $this->contenu=htmlspecialchars($contenu);
     }
-    public function getContenu($contenu){
+    public function getContenu(){
       return $this->contenu;
     }
     public function show(){
-        return "TITLE : {$this->title} - Contenu {$this->contenu} " ;
+        return "TITLE : {$this->title} - Contenu : {$this->contenu} " ;
     }
     
 
